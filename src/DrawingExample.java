@@ -30,20 +30,12 @@ public class DrawingExample extends JFrame {
         int waveformHeight = 100;
         g.setColor(Color.BLUE);
 
-        
         // Draw the top waveform
         for (int x = 0; x < waveformWidth; x++) {
             int y = (int) (waveformHeight * Math.sin((double) x / waveformWidth * 2 * Math.PI));
             g.drawLine(waveformX + x, waveformY + waveformHeight / 2, waveformX + x, waveformY + waveformHeight / 2 - y);
         }
-		
-		/*
-        // Draw the bottom waveform
-        for (int x = 0; x < waveformWidth; x++) {
-            int y = (int) (waveformHeight * Math.cos((double) x / waveformWidth * 2 * Math.PI));
-            g.drawLine(waveformX + x, waveformY + waveformHeight / 2, waveformX + x, waveformY + waveformHeight / 2 + y);
-        }
-        */
+
     }
 
     public static void main(String[] args) {
